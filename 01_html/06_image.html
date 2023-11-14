@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Image</title>
+</head>
+<body>
+    <h1>Image</h1>
+    <!-- 
+        src 이미지경로. 절대/상대경로
+        alt 대체텍스트. 이미지로드에 실패시 화면에 노출될 텍스트. 스크린 리더에 의해 해석/전달됨.
+     -->
+
+     <!-- 절대경로 -->
+    <img 
+    src="/image/flower1.PNG" 
+    alt="분홍색 벚꽃 이미지"
+    style="width: 300px;">
+
+    <!-- 상대경로 -->
+    <img 
+    src="../image/flower1.PNG" 
+    alt="분홍색 벚꽃 이미지"
+    style="width: 300px;">
+
+     <!-- 절대경로 -->
+     <img 
+     src="https://mblogthumb-phinf.pstatic.net/MjAxOTA3MTZfOTcg/MDAxNTYzMjU4OTgxNTgz.n6PR-FWCx97rgc0vjDTBJU_O1SdzuP2wU_0ja-AdtTIg.3tVQKL6R45VsZR1nDNfcjh_EvLt6XHWwopG5rcAfq68g.JPEG.dono_box/%EA%B3%A8%EB%93%A0%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%8411.jpg?type=w800"
+     alt="리트리버"
+     style="width: 300px;">
+
+     <h2> 절대 | 상대 단위</h2>
+     <div>
+        <img src="../image/flower1.PNG" width="100px" alt="">
+        <img src="../image/flower2.PNG" width="100px" alt="">
+        <img src="../image/flower3.PNG" width="100px" alt="">
+        <img src="../image/flower4.PNG" width="100px" alt="">
+        <img src="../image/flower5.PNG" width="100px" alt="">
+     </div>
+     <h3>% 상대(가변)단위</h3>
+     <!--  부모태그 기준으로 상대크기를 결정 -->
+     <div></div>
+        <img src="../image/flower1.PNG" width="19%" alt="">
+        <img src="../image/flower2.PNG" width="19%" alt="">
+        <img src="../image/flower3.PNG" width="19%" alt="">
+        <img src="../image/flower4.PNG" width="19%" alt="">
+        <img src="../image/flower5.PNG" width="19%" alt="">
+     </div>
+
+     <h2>정렬</h2>
+     <!-- div>img+p>lorem  -->
+     <div>
+        <img 
+        src="../image/river1.PNG" 
+        width="200px" 
+        style="float: left; margin: 10px;" 
+        alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus, commodi ullam voluptatum quis debitis labore repellat quo cumque at soluta facilis, unde sit veritatis ipsa velit architecto obcaecati! Velit.</p>
+     </div>
+     <div>
+        <img 
+        src="../image/river1.PNG" 
+        width="200px" 
+        style="float: right; margin: 10px;" 
+        alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatibus, commodi ullam voluptatum quis debitis labore repellat quo cumque at soluta facilis, unde sit veritatis ipsa velit architecto obcaecati! Velit.</p>
+     </div>
+
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
