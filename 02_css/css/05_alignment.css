@@ -1,0 +1,33 @@
+.parent {
+    background-color: bisque;
+    text-align: right;
+}
+.parent span {
+    background-color: hotpink;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000; /* #rrggbb(6자리) #rgb(3자리) 둘다가능*/
+    /* center 위아래 좌우 */
+    /* margin: 0 auto; */
+    /* right */
+    /* margin-left: auto; */
+    /* left */
+    /* margin-right: auto; */
+}
+.item{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    background-color: bisque;
+    color: coral;
+    /* text-align: center; (좌우 가운데 정렬)*/
+
+    /* 가운데(상하좌우) 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
