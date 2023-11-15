@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 종합실습문제1</title>
+</head>
+<body>
+    <form action="" method="get"></form>
+    <fieldset>
+        <legend>납품자 정보</legend>
+
+        <label for="Name">1. 납품자명(필수) : 
+        <input type="text" name="Name" id="Name" required></label>
+        <br>
+        <label for="Email">2. email(필수) : 
+        <input type="email" name="Email" id="Email" placeholder="answer@naver.com" required></label>
+        <br>
+        <label for="homepage">3. 홈페이지 : 
+        <input type="url" name="homepage" id="homepage" placeholder="https://" value="https://"></label>
+        <br>
+        4. 지역 : <select name="area" id="area">
+            <option value=""></option>
+            <option value="" selected>부산</option>
+            <option value="">서울</option>
+        </select>
+        <br>
+    </fieldset>
+    <form action="" method="get"></form>
+    <fieldset>
+        <legend>납품 정보</legend>
+
+        <lebel>
+            <ul>
+                <li>상품명(필수) : 
+                    <input type="text" name="item" id="item" required>
+                    <br>
+                </li>
+            </ul>
+    </lebel>
+
+    <lebel>
+        <ul>
+            <li>납품수량(필수) : 
+                <input type="text" name="count" id="count" placeholder="최소 100" min="100" required>
+                <br>
+            </li>
+        </ul>
+    </lebel>
+
+    <label>
+        <ul>
+            <li>납품등급(필수) :
+                <input type="range" name="score" id="score" required>
+                <br>
+            </li>
+        </ul>
+    </label>
+
+    <label>
+        <ul>
+            <li>기타사항 : 
+                <textarea name="etc" id="etc" height="20px"></textarea>
+
+            </li>
+        </ul>
+    </label>
+
+</fieldset>
+<input type="submit" value="send message">
+</body>
+</html>
