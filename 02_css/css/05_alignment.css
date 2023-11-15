@@ -1,6 +1,6 @@
 .parent {
     background-color: bisque;
-    text-align: right;
+    text-align: left;
 }
 .parent span {
     background-color: hotpink;
