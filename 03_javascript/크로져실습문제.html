@@ -26,11 +26,9 @@
 		return (b) => console.log(b); // undefined // 999
 	}
 
-	const coo = (c) => {
-		return (n) => {
-		  console.log(c * n); // 15 // NaN
-		}
-	}
+	const coo = (c) => (n) => console.log(c * n); // 15 // NaN
+
+	
 	</script>
 
 	<h3>@실습문제2</h3>
@@ -49,8 +47,16 @@
 
 	<script>
 	const mkAddFunc = () => {
-		const num = document.querySelectorAll('#myadder').value;
-		console.log(num.value);
+		let sum = 0; //자유변수
+		return () => {
+		const myadder = document.querySelector("#myadder");
+		const result = document.querySelector('#result');
+		// 숫자, '', null은 false반환, 문자열, undefined등 숫자변환불가인 값은 true를 반환
+		if(isNaN(myadder.value)) return;
+		//input타입과 상관없이 value의 타입은 string임.
+			sum += Number(myadder.value);
+			result.innerHTML = sum;
+		};
 	};
 	const addFunc = mkAddFunc();
 

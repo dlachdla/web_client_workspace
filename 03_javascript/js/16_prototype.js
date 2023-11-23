@@ -55,6 +55,8 @@ Truck.prototype.constructor = Truck;
  * - apply (this객체, [...params]) 호출
  * - call (this객체, ...params) 호출
  * - bind (thisrorcp) 바인딩후 함수 반환
+ * 
+ * - 화살표함수는 this를 재바인딩 할 수 없닾
  */
 const test3 = () => {
     const foo = function(a, b){
