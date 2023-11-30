@@ -121,7 +121,8 @@ function _querySelectorAll() {
     // const list = document.querySelectorAll("li.group1, li.group2");
     console.log(list);
 
-    // list.innerHTML = 'zzzz'; // 배열 객체에는 innerHTML 속성이 없다
+    // list.innerHTML = 'zzzz'; // 배열 객체에는 innerHTML
+     속성이 없다
     for(let i = 0; i < list.length; i++) {
         list[i].innerHTML = 'zzzz';
     }
